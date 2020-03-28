@@ -27,7 +27,7 @@ public class Client {
                 sendEcho.println(input);
                 if(!input.equals("exit")){
                     response = echo.readLine();
-                    System.out.println("Server responsed: "+response);
+                    System.out.println("Server response: "+response);
                 }
 
             }while(!input.equals("exit"));
