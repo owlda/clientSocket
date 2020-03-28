@@ -22,12 +22,12 @@ public class Client {
 
             do{
 
-                System.out.println("Enter a message to the server");
+                System.out.print("Send a message to the server: ");
                 input = scanner.nextLine();
                 sendEcho.println(input);
                 if(!input.equals("exit")){
                     response = echo.readLine();
-                    System.out.println(response);
+                    System.out.println("Server responsed: "+response);
                 }
 
             }while(!input.equals("exit"));
